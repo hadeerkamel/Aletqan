@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="Foug_Elhoda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsu-pg-noV">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="218"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfG-Uz-LrD">
+                                <rect key="frame" x="30" y="20" width="137" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bfG-Uz-LrD" secondAttribute="height" multiplier="1:1" id="lqh-da-97M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-Ir-fDT">
+                                <rect key="frame" x="79" y="162" width="39.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nFM-Ir-fDT" firstAttribute="centerX" secondItem="Gsu-pg-noV" secondAttribute="centerX" id="64a-ax-gZT"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nFM-Ir-fDT" secondAttribute="bottom" constant="3" id="BSF-Bb-OAo"/>
+                            <constraint firstItem="bfG-Uz-LrD" firstAttribute="top" secondItem="Gsu-pg-noV" secondAttribute="top" constant="20" id="CDH-gt-e88"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nFM-Ir-fDT" secondAttribute="trailing" constant="10" id="X61-hG-mwp"/>
+                            <constraint firstItem="nFM-Ir-fDT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gsu-pg-noV" secondAttribute="leading" constant="10" id="ZEQ-15-5ge"/>
+                            <constraint firstItem="bfG-Uz-LrD" firstAttribute="leading" secondItem="Gsu-pg-noV" secondAttribute="leading" constant="30" id="cwi-cR-McA"/>
+                            <constraint firstItem="nFM-Ir-fDT" firstAttribute="top" secondItem="bfG-Uz-LrD" secondAttribute="bottom" constant="5" id="oLZ-Ke-VpD"/>
+                            <constraint firstAttribute="trailing" secondItem="bfG-Uz-LrD" secondAttribute="trailing" constant="30" id="p3c-Gf-gyQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gsu-pg-noV" secondAttribute="trailing" id="9Sx-lk-b2R"/>
+                <constraint firstItem="Gsu-pg-noV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XiT-mn-yp4"/>
+                <constraint firstAttribute="bottom" secondItem="Gsu-pg-noV" secondAttribute="bottom" id="aKs-BI-a8N"/>
+                <constraint firstItem="Gsu-pg-noV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e4Q-hy-nfz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="197" height="218"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="Gsu-pg-noV" id="VIx-6Z-UAd"/>
+                <outlet property="image" destination="bfG-Uz-LrD" id="gq1-UM-A5a"/>
+                <outlet property="label" destination="nFM-Ir-fDT" id="g5r-i7-G7m"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="144"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Foug_Elhoda {
+  umbrella header "Pods-Foug Elhoda-umbrella.h"
+
+  export *
+  module * { export * }
+}

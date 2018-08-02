@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TimesTableViewCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TimesTableViewCell" customModule="Foug_Elhoda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اليوم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ASh-k8-Dit">
+                        <rect key="frame" x="146" y="11" width="28.5" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المكان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-vr-faS">
+                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الساعه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bvo-rn-21a">
+                        <rect key="frame" x="264" y="11" width="40" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bvo-rn-21a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ABx-Zo-NUH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ASh-k8-Dit" secondAttribute="bottom" id="Anq-Jk-Cqj"/>
+                    <constraint firstItem="ASh-k8-Dit" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N4x-vr-faS" secondAttribute="trailing" constant="15" id="ClH-hc-toF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bvo-rn-21a" secondAttribute="trailing" id="E7Z-dK-Qui"/>
+                    <constraint firstItem="ASh-k8-Dit" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="IAd-9e-sDN"/>
+                    <constraint firstAttribute="bottom" secondItem="N4x-vr-faS" secondAttribute="bottom" id="We3-7t-KbR"/>
+                    <constraint firstItem="bvo-rn-21a" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="fT4-xy-gro"/>
+                    <constraint firstItem="bvo-rn-21a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ASh-k8-Dit" secondAttribute="trailing" constant="15" id="jsd-9o-R1o"/>
+                    <constraint firstItem="N4x-vr-faS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mKe-vC-GmV"/>
+                    <constraint firstItem="ASh-k8-Dit" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pbr-ys-9nt"/>
+                    <constraint firstItem="N4x-vr-faS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x5V-Z6-aTj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dayLabel" destination="ASh-k8-Dit" id="HQQ-Bm-QaK"/>
+                <outlet property="placeLabel" destination="N4x-vr-faS" id="Xyj-B7-60K"/>
+                <outlet property="timeLabel" destination="bvo-rn-21a" id="hBT-YY-U7m"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
